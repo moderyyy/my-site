@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Обо мне — Артем</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- Навигация -->
+      <nav class="nav-menu">
+        <a href="index.html" class="active">Главная</a>
+        <a href="todo.html">Список дел</a>
+      </nav>
+
+      <div class="profile-header">
+        <h1>Артем</h1>
+        <p class="bio">
+          Студент РТУ МИРЭА. Учусь создавать современные сайты и веб-приложения.
+        </p>
+      </div>
+
+      <section class="info-section">
+        <h2>Мои увлечения</h2>
+        <ul class="chips-list">
+          <li>Компьютерные игры</li>
+          <li>Музыка</li>
+          <li>Программирование</li>
+        </ul>
+      </section>
+
+      <section class="info-section">
+        <h2>Любимый сайт</h2>
+        <p>
+          <a href="https://www.dotabuff.com" target="_blank" class="link-btn"
+            >Dotabuff ↗</a
+          >
+        </p>
+        <div class="image-wrapper">
+          <img
+            src="vetmo.jpeg"
+            alt="Пиранья крупным планом: красные глаза и острые зубы"
+          />
+        </div>
+      </section>
+
+      <section class="info-section">
+        <h2>Планы на год</h2>
+        <ol class="plans-list">
+          <li>Выстроить крепкие отношения с Ксюшей</li>
+          <li>Закрыть все долги по учебе</li>
+          <li>Успешно сдать сессию</li>
+        </ol>
+      </section>
+
+      <!-- Интерактивные блоки -->
+      <section class="block">
+        <h2>1. Тема</h2>
+        <button id="themeBtn">Тёмная тема</button>
+      </section>
+
+      <section class="block">
+        <h2>2. Приветствие</h2>
+        <div class="input-group">
+          <input id="nameInput" placeholder="Ваше имя" />
+          <button id="greetBtn">Поздороваться</button>
+        </div>
+        <p id="greeting" class="greeting-text"></p>
+      </section>
+
+      <section class="block">
+        <h2>3. Счётчик</h2>
+        <div class="btn-group">
+          <button id="minusBtn">−1</button>
+          <button id="plusBtn">+1</button>
+          <button id="resetBtn" class="btn-secondary">Сбросить</button>
+        </div>
+        <p id="counter" class="counter">0</p>
+      </section>
+
+      <section class="block">
+        <h2>4. Галерея цветов</h2>
+        <div id="colorBox" class="color-box"></div>
+        <div class="btn-group">
+          <button id="prevBtn" class="btn-secondary">Назад</button>
+          <button id="nextBtn">Вперёд</button>
+        </div>
+      </section>
+
+      <footer>© 2026 Артем</footer>
+    </div>
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

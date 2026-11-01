@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список дел</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- Навигация (Шаг 4) -->
+      <nav class="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="todo.html" class="active">Список дел</a>
+      </nav>
+
+      <h1>Мой список дел</h1>
+
+      <div class="todo-form">
+        <input type="text" id="taskInput" placeholder="Что нужно сделать?" />
+        <button id="addBtn">Добавить</button>
+      </div>
+
+      <ul id="taskList" class="todo-list"></ul>
+
+      <footer>2026</footer>
+    </div>
+    <script src="theme.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
